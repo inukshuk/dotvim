@@ -20,6 +20,8 @@ set modelines=10
 
 set mouse=a
 
+set encoding=utf-8
+
 set whichwrap=b,s,<,>,[,]
 
 set background=dark
@@ -71,7 +73,12 @@ let g:syntastic_always_populate_loc_list = 1
 let g:vim_json_syntax_conceal = 1
 
 let g:lightline = {
-  \ 'colorscheme': 'wombat'
+  \ 'colorscheme': 'seoul256',
+  \ 'component': {
+  \   'readonly': '%{&readonly?"":""}',
+  \ },
+  \ 'separator': { 'left': '', 'right': '' },
+  \ 'subseparator': { 'left': '', 'right': '' }
   \ }
 
 set exrc

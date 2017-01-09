@@ -3,10 +3,19 @@
 
 set guioptions-=m
 set guioptions-=T
-"set guifont='DejaVu Sans Mono for Powerline 10'
+set guifont='Hack 12'
 
 set guioptions+=lrb
 set guioptions-=lrb
 
 set background=light
 colorscheme ghost
+
+let g:lightline = {
+  \ 'colorscheme': 'PaperColor',
+  \ 'component': {
+  \   'readonly': '%{&readonly?"":""}',
+  \ },
+  \ 'separator': { 'left': '', 'right': '' },
+  \ 'subseparator': { 'left': '', 'right': '' }
+  \ }
