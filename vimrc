@@ -27,6 +27,13 @@ set whichwrap=b,s,<,>,[,]
 set background=dark
 "colorscheme molokai
 
+" Force using a login shell
+set shell=$SHELL
+
+" Persistent undo
+set undofile
+set undodir=~/.vim/undo
+
 augroup filetype
   au!
   au BufRead,BufNewFile *.tex set filetype=human
