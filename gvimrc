@@ -3,7 +3,7 @@
 
 set guioptions-=m
 set guioptions-=T
-set guifont='Hack 12'
+set guifont=Hack\ 12
 
 set guioptions+=lrb
 set guioptions-=lrb
