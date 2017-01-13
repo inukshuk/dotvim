@@ -10,12 +10,3 @@ set guioptions-=lrb
 
 set background=light
 colorscheme ghost
-
-let g:lightline = {
-  \ 'colorscheme': 'PaperColor',
-  \ 'component': {
-  \   'readonly': '%{&readonly?"":""}',
-  \ },
-  \ 'separator': { 'left': '', 'right': '' },
-  \ 'subseparator': { 'left': '', 'right': '' }
-  \ }

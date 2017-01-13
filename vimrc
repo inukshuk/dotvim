@@ -88,5 +88,24 @@ let g:lightline = {
   \ 'subseparator': { 'left': '', 'right': '' }
   \ }
 
+let g:lightline.mode_map = {
+      \ 'n' : 'N',
+      \ 'i' : 'I',
+      \ 'R' : 'R',
+      \ 'v' : 'V',
+      \ 'V' : 'VL',
+      \ "\<C-v>": 'VB',
+      \ 'c' : 'C',
+      \ 's' : 'S',
+      \ 'S' : 'SL',
+      \ "\<C-s>": 'SB',
+      \ 't': 'T',
+      \ }
+
+
+if has('gui_running')
+  let g:lightline.colorscheme = 'Tomorrow_Night_Bright'
+endif
+
 set exrc
 set secure
