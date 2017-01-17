@@ -3,7 +3,7 @@
 
 set guioptions-=m
 set guioptions-=T
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 14
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
 
 set guioptions+=lrb
 set guioptions-=lrb
