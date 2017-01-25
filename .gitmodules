@@ -58,3 +58,6 @@
 	path = bundle/vim-pug
 	url = git://github.com/digitaltoad/vim-pug.git
   ignore = dirty
+[submodule "bundle/vim-gnupg"]
+	path = bundle/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg.git
