@@ -5,7 +5,7 @@
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
     cd ~/.vim
-    git submoudle iupdate --init
+    git submoudle update --init
 
 ## Upgrading a plugin bundle
     cd ~/.vim/bundle/fugitive
