@@ -33,6 +33,8 @@ set background=dark
 " Force using a login shell
 set shell=$SHELL
 
+set spelllang=en_us,de spellsuggest=6
+
 " Persistent undo
 set undofile
 set undodir=~/.vim/undo
@@ -47,7 +49,7 @@ augroup end
 
 augroup filetype_human
   au!
-  au FileType {human,markdown} set textwidth=79 wrap spell spelllang=en_us,de spellsuggest=6
+  au FileType {human,markdown} set textwidth=79 wrap
 augroup end
 
 augroup filetype_make
