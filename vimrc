@@ -13,6 +13,7 @@ set ignorecase
 set smartcase
 
 set wildmode=longest,list,full
+set wildignore+=*.so,*.swp,*.zip
 
 set novisualbell
 set noerrorbells
@@ -78,6 +79,8 @@ let g:gitgutter_sign_column_always = 1
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exe = substitute(system('npm-which eslint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 let g:syntastic_always_populate_loc_list = 1
+
+let g:ctrlp_cutom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 let g:vim_json_syntax_conceal = 1
 
