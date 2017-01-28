@@ -106,7 +106,7 @@ let g:lightline.mode_map = {
 
 
 if has('gui_running')
-  let g:lightline.colorscheme = 'Tomorrow_Night_Bright'
+  let g:lightline.colorscheme = 'ghost'
 endif
 
 set exrc
