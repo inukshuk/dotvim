@@ -41,27 +41,6 @@ set spelllang=en_us,de spellsuggest=6
 set undofile
 set undodir=~/.vim/undo
 
-augroup filetype
-  au!
-  au BufRead,BufNewFile *.tex set filetype=human
-  au BufRead,BufNewFile *.txt set filetype=human
-  au BufRead,BufNewFile *.js.ejs set filetype=human
-augroup end
-
-augroup filetype_human
-  au!
-  au FileType {human,markdown} set textwidth=79 wrap
-augroup end
-
-augroup filetype_make
-  au!
-  au FileType make set noexpandtab
-augroup end
-
-augroup filetype_json
-  au!
-  au FileType json nmap =j :%!jq .<CR>
-augroup end
 
 augroup remember_position
   au!
@@ -80,7 +59,10 @@ augroup end
 let g:gitgutter_sign_column_always = 1
 
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = substitute(system('npm-which eslint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+
+let g:syntastic_javascript_eslint_exe = substitute(
+  \ system('npm-which eslint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+
 let g:syntastic_always_populate_loc_list = 1
 
 let g:ctrlp_cutom_ignore = '\v[\/]\.(git|hg|svn)$'
