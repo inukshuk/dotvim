@@ -30,6 +30,8 @@ set whichwrap=b,s,<,>,[,]
 set background=dark
 "colorscheme molokai
 
+set shortmess+=I
+
 " Force using a login shell
 set shell=$SHELL
 
