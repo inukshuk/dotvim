@@ -5,8 +5,8 @@ set guioptions-=m
 set guioptions-=T
 set guifont=Hack\ 13
 
-set guioptions+=lrb
-set guioptions-=lrb
+set guioptions+=LlRrb
+set guioptions-=LlRrb
 
 set background=light
 colorscheme ghost

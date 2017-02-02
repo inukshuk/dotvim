@@ -24,7 +24,7 @@ hi Folded   ctermfg=8 ctermbg=15 guifg=#808080 guibg=#f4f4f3 gui=bold cterm=bold
 hi Title    ctermfg=167 guifg=#ef5939
 hi StatusLine ctermfg=238 ctermbg=250 guifg=#404040 guibg=#bbbbbb gui=bold cterm=bold
 hi StatusLineNC ctermfg=238 ctermbg=252 guifg=#404040 guibg=#d4d4d4 gui=italic cterm=italic
-hi VertSplit ctermfg=250 ctermbg=250 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=none
+hi VertSplit ctermfg=250 ctermbg=250 guifg=#f4f4f3 guibg=#f4f4f3 gui=none cterm=none
 hi LineNr   ctermfg=246 ctermbg=15 guifg=#959595 guibg=#f4f4f3 gui=bold cterm=bold
 hi SpecialKey ctermfg=6 guifg=#177F80 gui=italic cterm=italic
 hi WarningMsg ctermfg=167 guifg=#ef5939
