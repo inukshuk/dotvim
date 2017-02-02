@@ -46,7 +46,6 @@ augroup filetype
   au BufRead,BufNewFile *.tex set filetype=human
   au BufRead,BufNewFile *.txt set filetype=human
   au BufRead,BufNewFile *.js.ejs set filetype=human
-  au BufRead,BufNewFile {Gemfile,Rakefile,Vargrantfile,config.ru} set filetype=ruby
 augroup end
 
 augroup filetype_human
