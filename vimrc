@@ -41,6 +41,13 @@ set spelllang=en_us,de spellsuggest=6
 set undofile
 set undodir=~/.vim/undo
 
+" Split lines (reverse join)
+nmap K r<Enter><Esc>f<Space>
+
+" Fast saving...
+com Wq wq
+com WQ wq
+com W w
 
 augroup remember_position
   au!
