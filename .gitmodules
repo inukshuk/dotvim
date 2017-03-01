@@ -69,3 +69,7 @@
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
   ignore = dirty
+[submodule "bundle/vim-css3"]
+	path = bundle/vim-css3
+	url = https://github.com/hail2u/vim-css3-syntax.git
+  ignore = dirty
