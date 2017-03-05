@@ -19,6 +19,6 @@ if has('unix')
 endif
 
 if has('win32')
-  set guifont=Hack:h11:cANSI:qDRAFT
+  set guifont=Hack:h12:cANSI:qDRAFT
   colorscheme ghost-win
 endif
