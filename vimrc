@@ -32,14 +32,22 @@ set background=dark
 
 set shortmess+=I
 
-" Force using a login shell
-set shell=$SHELL
+if has('unix')
+  " Force using a login shell
+  set shell=$SHELL
+
+  " Persistent undo
+  set undofile
+  set undodir=~/.vim/undo
+endif
+
+if has('win32')
+  set undofile
+  set undodir=~/vimfiles/undo
+endif
 
 set spelllang=en_us,de spellsuggest=6
 
-" Persistent undo
-set undofile
-set undodir=~/.vim/undo
 
 " Split lines (reverse join)
 nmap K r<Enter><Esc>f<Space>

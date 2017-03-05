@@ -3,10 +3,22 @@
 
 set guioptions-=m
 set guioptions-=T
-set guifont=Hack\ 13
 
 set guioptions+=LlRrb
 set guioptions-=LlRrb
 
-set background=light
-colorscheme ghost
+if has('unix')
+  if has('mac')
+    set guifont=Hack\ 13
+    colorscheme ghost
+  else
+    set guifont=Hack\ 13
+    colorscheme ghost
+  endif
+
+endif
+
+if has('win32')
+  set guifont=Hack:h11:cANSI:qDRAFT
+  colorscheme ghost-win
+endif
