@@ -77,3 +77,7 @@
 	path = bundle/tmux
 	url = https://github.com/ericpruitt/tmux.vim
   ignore = dirty
+[submodule "bundle/vim-hbs"]
+	path = bundle/vim-hbs
+	url = https://github.com/mustache/vim-mustache-handlebars
+  ignore = dirty
