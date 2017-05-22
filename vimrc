@@ -48,9 +48,11 @@ endif
 
 set spelllang=en_us,de spellsuggest=6
 
+" Use space as leader
+map <space> <leader>
 
 " Split lines (reverse join)
-nmap K r<Enter><Esc>f<Space>
+nmap K r<enter><esc>f<space>
 
 " Fast saving...
 com Wq wq
