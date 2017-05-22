@@ -81,3 +81,7 @@
 	path = bundle/vim-hbs
 	url = https://github.com/mustache/vim-mustache-handlebars
   ignore = dirty
+[submodule "bundle/splitjoin"]
+	path = bundle/splitjoin
+	url = https://github.com/AndrewRadev/splitjoin.vim
+  ignore = dirty
