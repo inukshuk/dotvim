@@ -75,12 +75,9 @@ augroup end
 
 let g:gitgutter_sign_column_always = 1
 
-let g:syntastic_javascript_checkers = ['eslint']
-
-let g:syntastic_javascript_eslint_exe = substitute(
-  \ system('npm-which eslint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
-
-let g:syntastic_always_populate_loc_list = 1
+let g:ale_sign_column_always = 1
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 let g:ctrlp_cutom_ignore = '\v[\/]\.(git|hg|svn)$'
 
