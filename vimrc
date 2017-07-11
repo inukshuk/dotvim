@@ -13,7 +13,7 @@ set ignorecase
 set smartcase
 
 set wildmode=longest,list,full
-set wildignore+=*.so,*.swp,*.zip
+set wildignore+=*.so,*.swp,*.zip,*.exe,*/tmp/*
 
 set novisualbell
 set noerrorbells
@@ -79,7 +79,16 @@ let g:ale_sign_column_always = 1
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-let g:ctrlp_cutom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$'
+  \ }
+
+if has('win32')
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'dir %s /-n /b /s /a-d']
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+endif
 
 let g:vim_json_syntax_conceal = 1
 
