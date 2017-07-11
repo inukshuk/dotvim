@@ -9,7 +9,7 @@ set guioptions-=LlRrb
 
 if has('unix')
   if has('mac')
-    set guifont=Hack\ 13
+    set guifont=Hack\ Regular:h13
     colorscheme ghost
   else
     set guifont=Hack\ 13
