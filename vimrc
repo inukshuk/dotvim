@@ -27,6 +27,8 @@ set encoding=utf-8
 
 set whichwrap=b,s,<,>,[,]
 
+set signcolumn=yes
+
 set background=dark
 "colorscheme molokai
 
@@ -72,8 +74,6 @@ augroup extra_space
   au BufWinLeave * call clearmatches()
 augroup end
 
-
-let g:gitgutter_sign_column_always = 1
 
 let g:ale_sign_column_always = 1
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
