@@ -85,3 +85,6 @@
 	path = bundle/ale
 	url = https://github.com/w0rp/ale
   ignore = dirty
+[submodule "bundle/is"]
+	path = bundle/is
+	url = https://github.com/haya14busa/is.vim

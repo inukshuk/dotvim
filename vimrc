@@ -8,6 +8,7 @@ set expandtab
 
 set nowrap
 
+set incsearch
 set hlsearch
 set ignorecase
 set smartcase
