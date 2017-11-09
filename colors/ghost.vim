@@ -43,6 +43,12 @@ if version >= 700
 endif
 " }}}
 
+" {{{ Vim => 8.0 specific colors
+if version >= 800
+    hi EndOfBuffer   ctermfg=246 ctermbg=255 guifg=#959595 guibg=#f4f4f3 gui=bold
+endif
+" }}}
+
 " {{{ Diff highlighting
 hi DiffAdd    ctermfg=233 ctermbg=194 guifg=#003300 guibg=#DDFFDD gui=none cterm=none
 hi DiffChange ctermbg=255  guibg=#f4f4f3 gui=none   cterm=none
