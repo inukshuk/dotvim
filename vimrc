@@ -27,7 +27,7 @@ set encoding=utf-8
 
 set whichwrap=b,s,<,>,[,]
 
-set signcolumn=yes
+set signcolumn=auto
 
 set background=dark
 "colorscheme molokai
