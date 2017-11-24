@@ -8,7 +8,7 @@
     git submoudle update --init
 
 ## Upgrading a plugin bundle
-    cd ~/.vim/bundle/fugitive
+    cd ~/.vim/pack/bundle/start/fugitive
     git pull origin master
 
 ## Upgrading all bundled plugins
@@ -17,6 +17,6 @@
 
 ## Adding a plugin bundle
     cd ~/.vim
-    git submodule add <url> bundle/<name>
+    git submodule add <url> pack/bundle/{start,opt}<name>
     git add .
     git commit -m "..."

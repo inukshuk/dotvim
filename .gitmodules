@@ -1,90 +1,86 @@
-[submodule "bundle/pathogen"]
-	path = bundle/pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-  ignore = dirty
 [submodule "bundle/sensible"]
-	path = bundle/sensible
+	path = pack/bundle/start/sensible
 	url = https://github.com/tpope/vim-sensible.git
   ignore = dirty
 [submodule "bundle/surround"]
-	path = bundle/surround
+	path = pack/bundle/start/surround
 	url = https://github.com/tpope/vim-surround.git
   ignore = dirty
 [submodule "bundle/unimpaired"]
-	path = bundle/unimpaired
+	path = pack/bundle/start/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
   ignore = dirty
 [submodule "bundle/repeat"]
-	path = bundle/repeat
+	path = pack/bundle/start/repeat
 	url = https://github.com/tpope/vim-repeat.git
   ignore = dirty
 [submodule "bundle/commentary"]
-	path = bundle/commentary
+	path = pack/bundle/start/commentary
 	url = https://github.com/tpope/vim-commentary.git
   ignore = dirty
 [submodule "bundle/lightline"]
-	path = bundle/lightline
+	path = pack/bundle/start/lightline
 	url = https://github.com/itchyny/lightline.vim.git
   ignore = dirty
 [submodule "bundle/colorschemes"]
-	path = bundle/colorschemes
+	path = pack/bundle/start/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
   ignore = dirty
 [submodule "bundle/gitgutter"]
-	path = bundle/gitgutter
+	path = pack/bundle/start/gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
   ignore = dirty
 [submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
+	path = pack/bundle/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
   ignore = dirty
 [submodule "bundle/vim-json"]
-	path = bundle/vim-json
+	path = pack/bundle/start/vim-json
 	url = https://github.com/elzr/vim-json.git
   ignore = dirty
 [submodule "bundle/vim-jsx"]
-	path = bundle/vim-jsx
+	path = pack/bundle/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
   ignore = dirty
 [submodule "bundle/fugitive"]
-	path = bundle/fugitive
+	path = pack/bundle/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
   ignore = dirty
 [submodule "vim-pug"]
-	path = bundle/vim-pug
+	path = pack/bundle/start/vim-pug
 	url = git://github.com/digitaltoad/vim-pug.git
   ignore = dirty
 [submodule "bundle/vim-gnupg"]
-	path = bundle/vim-gnupg
+	path = pack/bundle/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
 [submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
+	path = pack/bundle/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
   ignore = dirty
 [submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
+	path = pack/bundle/start/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
   ignore = dirty
 [submodule "bundle/vim-css3"]
-	path = bundle/vim-css3
+	path = pack/bundle/start/vim-css3
 	url = https://github.com/hail2u/vim-css3-syntax.git
   ignore = dirty
 [submodule "bundle/tmux"]
-	path = bundle/tmux
+	path = pack/bundle/start/tmux
 	url = https://github.com/ericpruitt/tmux.vim
   ignore = dirty
 [submodule "bundle/vim-hbs"]
-	path = bundle/vim-hbs
+	path = pack/bundle/start/vim-hbs
 	url = https://github.com/mustache/vim-mustache-handlebars
   ignore = dirty
 [submodule "bundle/splitjoin"]
-	path = bundle/splitjoin
+	path = pack/bundle/start/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim
   ignore = dirty
 [submodule "bundle/ale"]
-	path = bundle/ale
+	path = pack/bundle/start/ale
 	url = https://github.com/w0rp/ale
   ignore = dirty
-[submodule "bundle/is"]
-	path = bundle/is
-	url = https://github.com/haya14busa/is.vim
+[submodule "pack/bundle/start/is"]
+	path = pack/bundle/start/is
+	url = https://github.com/haya14busa/is.vim.git

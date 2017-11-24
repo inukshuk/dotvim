@@ -1,6 +1,3 @@
-runtime bundle/pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
 " Use :help 'option' to see the documentation for the given option.
 
 set tabstop=2 shiftwidth=2 softtabstop=2
