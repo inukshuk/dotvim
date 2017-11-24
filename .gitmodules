@@ -84,3 +84,16 @@
 [submodule "pack/bundle/start/is"]
 	path = pack/bundle/start/is
 	url = https://github.com/haya14busa/is.vim.git
+  ignore = dirty
+[submodule "pack/bundle/start/space-vim-dark"]
+	path = pack/bundle/start/space-vim-dark
+	url = https://github.com/liuchengxu/space-vim-dark.git
+  ignore = dirty
+[submodule "pack/bundle/start/apprentice"]
+	path = pack/bundle/start/apprentice
+	url = https://github.com/romainl/Apprentice.git
+  ignore = dirty
+[submodule "pack/bundle/start/vim-atom-dark"]
+	path = pack/bundle/start/vim-atom-dark
+	url = https://github.com/gosukiwi/vim-atom-dark.git
+  ignore = dirty
