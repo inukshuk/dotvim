@@ -29,8 +29,8 @@ hi VisualNOS       ctermfg=15   ctermbg=24  guifg=#FFFFFF   guibg=#204a87
 hi Search          ctermfg=236  ctermbg=228  guifg=#000000   guibg=#FFFF8C  cterm=bold gui=bold
 hi Title           ctermfg=167  guifg=#ef5939
 
-hi StatusLine      ctermfg=238  ctermbg=250  guifg=#404040  guibg=#bbbbbb  gui=NONE  cterm=NONE
-hi StatusLineNC    ctermfg=238  ctermbg=252  guifg=#404040  guibg=#d4d4d4  gui=NONE  cterm=NONE
+hi StatusLine      ctermfg=238  ctermbg=250  guifg=#404040  guibg=#cdcdc8  gui=NONE  cterm=NONE
+hi StatusLineNC    ctermfg=238  ctermbg=252  guifg=#303030  guibg=#cdcdc8  gui=NONE  cterm=NONE
 
 hi VertSplit       ctermfg=250  ctermbg=250  guifg=#cdcdc8  guibg=#f4f4f3  gui=NONE  cterm=NONE
 
