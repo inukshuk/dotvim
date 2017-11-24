@@ -27,8 +27,9 @@ set whichwrap=b,s,<,>,[,]
 
 set signcolumn=auto
 
+set termguicolors
 set background=dark
-"colorscheme molokai
+colorscheme ghost-dark
 
 set shortmess+=I
 
@@ -91,7 +92,7 @@ endif
 let g:vim_json_syntax_conceal = 1
 
 let g:lightline = {
-  \ 'colorscheme': 'seoul256',
+  \ 'colorscheme': 'Tomorrow_Night_Eighties',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
   \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
