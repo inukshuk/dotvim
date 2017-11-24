@@ -1,8 +1,6 @@
-" 'apprentice.vim' -- Vim color scheme.
-" Author:       Romain Lafourcade (romainlafourcade@gmail.com)
-" Description:  Essentially a streamlining and conversion to xterm colors of
-"               'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
-" Last Change:  2017 Oct 07
+" 'ghost-dark.vim' -- Vim color scheme.
+" Description:  A variation of 'Apprentice' by
+"               Romain Lafourcade (romainlafourcade@gmail.com)
 
 " MADE-UP NAME    HEX        RGB                   XTERM  ANSI
 " ========================================================================

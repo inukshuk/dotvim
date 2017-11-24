@@ -92,7 +92,7 @@ endif
 let g:vim_json_syntax_conceal = 1
 
 let g:lightline = {
-  \ 'colorscheme': 'Tomorrow_Night_Eighties',
+  \ 'colorscheme': 'ghost_dark',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
   \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
