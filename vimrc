@@ -31,7 +31,11 @@ set termguicolors
 set background=dark
 colorscheme ghost-dark
 
+" Thin vertical splits
+set fillchars=vert:│
+
 set shortmess+=I
+set noshowmode
 
 if has('unix')
   " Force using a login shell

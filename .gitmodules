@@ -97,3 +97,6 @@
 	path = pack/bundle/start/vim-atom-dark
 	url = https://github.com/gosukiwi/vim-atom-dark.git
   ignore = dirty
+[submodule "pack/bundle/start/vim-one"]
+	path = pack/bundle/start/vim-one
+	url = https://github.com/rakr/vim-one.git
