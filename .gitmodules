@@ -100,3 +100,6 @@
 [submodule "pack/bundle/start/vim-one"]
 	path = pack/bundle/start/vim-one
 	url = https://github.com/rakr/vim-one.git
+[submodule "pack/bundle/start/glsl.vim"]
+	path = pack/bundle/start/glsl.vim
+	url = https://github.com/beyondmarc/glsl.vim
