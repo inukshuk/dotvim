@@ -5,7 +5,7 @@
 " MADE-UP NAME    HEX        RGB                   XTERM  ANSI
 " ========================================================================
 " almost black    #1c1c1c    rgb(28, 28, 28)       234    0
-" darker grey     #262626    rgb(38, 38, 38)       235    background color
+" darker grey     #212121    rgb(33, 33, 33)       235    background color
 " dark grey       #303030    rgb(48, 48, 48)       236    8
 " grey            #444444    rgb(68, 68, 68)       238    8
 " medium grey     #585858    rgb(88, 88, 88)       240    8
@@ -33,12 +33,12 @@ endif
 
 let colors_name = "ghost-dark"
 
-hi Normal          ctermbg=235  ctermfg=250  guibg=#262626 guifg=#bcbcbc cterm=NONE           gui=NONE
-hi LineNr          ctermbg=235  ctermfg=242  guibg=#262626 guifg=#6c6c6c cterm=NONE           gui=NONE
-hi FoldColumn      ctermbg=235  ctermfg=242  guibg=#262626 guifg=#6c6c6c cterm=NONE           gui=NONE
-hi Folded          ctermbg=235  ctermfg=242  guibg=#262626 guifg=#6c6c6c cterm=NONE           gui=NONE
-hi MatchParen      ctermbg=235  ctermfg=229  guibg=#262626 guifg=#ffffaf cterm=NONE           gui=NONE
-hi signColumn      ctermbg=235  ctermfg=242  guibg=#262626 guifg=#6c6c6c cterm=NONE           gui=NONE
+hi Normal          ctermbg=235  ctermfg=250  guibg=#212121 guifg=#bcbcbc cterm=NONE           gui=NONE
+hi LineNr          ctermbg=235  ctermfg=242  guibg=#212121 guifg=#6c6c6c cterm=NONE           gui=NONE
+hi FoldColumn      ctermbg=235  ctermfg=242  guibg=#212121 guifg=#6c6c6c cterm=NONE           gui=NONE
+hi Folded          ctermbg=235  ctermfg=242  guibg=#212121 guifg=#6c6c6c cterm=NONE           gui=NONE
+hi MatchParen      ctermbg=235  ctermfg=229  guibg=#212121 guifg=#ffffaf cterm=NONE           gui=NONE
+hi signColumn      ctermbg=235  ctermfg=242  guibg=#212121 guifg=#6c6c6c cterm=NONE           gui=NONE
 
 set background=dark
 
@@ -60,10 +60,10 @@ hi NonText         ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=N
 
 hi Pmenu           ctermbg=238  ctermfg=250  guibg=#444444 guifg=#bcbcbc cterm=NONE           gui=NONE
 hi PmenuSbar       ctermbg=240  ctermfg=NONE guibg=#585858 guifg=NONE    cterm=NONE           gui=NONE
-hi PmenuSel        ctermbg=66   ctermfg=235  guibg=#5f8787 guifg=#262626 cterm=NONE           gui=NONE
+hi PmenuSel        ctermbg=66   ctermfg=235  guibg=#5f8787 guifg=#212121 cterm=NONE           gui=NONE
 hi PmenuThumb      ctermbg=66   ctermfg=66   guibg=#5f8787 guifg=#5f8787 cterm=NONE           gui=NONE
 
-hi ErrorMsg        ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#262626 cterm=NONE           gui=NONE
+hi ErrorMsg        ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#212121 cterm=NONE           gui=NONE
 hi ModeMsg         ctermbg=NONE ctermfg=242  guibg=NONE    guifg=#6c6c6c cterm=NONE           gui=NONE
 hi MoreMsg         ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=NONE           gui=NONE
 hi Question        ctermbg=NONE ctermfg=108  guibg=NONE    guifg=#87af87 cterm=NONE           gui=NONE
@@ -71,7 +71,7 @@ hi WarningMsg      ctermbg=NONE ctermfg=131  guibg=NONE    guifg=#af5f5f cterm=N
 
 hi TabLine         ctermbg=238  ctermfg=101  guibg=#444444 guifg=#87875f cterm=NONE           gui=NONE
 hi TabLineFill     ctermbg=238  ctermfg=238  guibg=#444444 guifg=#444444 cterm=NONE           gui=NONE
-hi TabLineSel      ctermbg=101  ctermfg=235  guibg=#87875f guifg=#262626 cterm=NONE           gui=NONE
+hi TabLineSel      ctermbg=101  ctermfg=235  guibg=#87875f guifg=#212121 cterm=NONE           gui=NONE
 
 hi Cursor          ctermbg=242  ctermfg=NONE guibg=#6c6c6c guifg=NONE    cterm=NONE           gui=NONE
 hi CursorColumn    ctermbg=236  ctermfg=NONE guibg=#303030 guifg=NONE    cterm=NONE           gui=NONE
@@ -84,23 +84,23 @@ hi helpNormal      ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=N
 hi StatusLine      ctermbg=236  ctermfg=250  guibg=#303030 guifg=#bcbcbc cterm=NONE           gui=NONE
 hi StatusLineNC    ctermbg=236  ctermfg=242  guibg=#303030 guifg=#6c6c6c cterm=NONE           gui=NONE
 
-hi Visual          ctermbg=235  ctermfg=110  guibg=#262626 guifg=#8fafd7 cterm=reverse        gui=reverse
+hi Visual          ctermbg=235  ctermfg=110  guibg=#212121 guifg=#8fafd7 cterm=reverse        gui=reverse
 hi VisualNOS       ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline      gui=underline
 
-hi VertSplit       ctermbg=235  ctermfg=236  guibg=#262626 guifg=#303030 cterm=NONE           gui=NONE
-hi WildMenu        ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#262626 cterm=NONE           gui=NONE
+hi VertSplit       ctermbg=235  ctermfg=236  guibg=#212121 guifg=#303030 cterm=NONE           gui=NONE
+hi WildMenu        ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#212121 cterm=NONE           gui=NONE
 
 hi Function        ctermbg=NONE ctermfg=229  guibg=NONE    guifg=#ffffaf cterm=NONE           gui=NONE
 hi SpecialKey      ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
 hi Title           ctermbg=NONE ctermfg=231  guibg=NONE    guifg=#ffffff cterm=NONE           gui=NONE
 
-hi DiffAdd         ctermbg=235  ctermfg=108  guibg=#262626 guifg=#87af87 cterm=reverse        gui=reverse
-hi DiffChange      ctermbg=235  ctermfg=103  guibg=#262626 guifg=#8787af cterm=reverse        gui=reverse
-hi DiffDelete      ctermbg=235  ctermfg=131  guibg=#262626 guifg=#af5f5f cterm=reverse        gui=reverse
-hi DiffText        ctermbg=235  ctermfg=208  guibg=#262626 guifg=#ff8700 cterm=reverse        gui=reverse
+hi DiffAdd         ctermbg=235  ctermfg=108  guibg=#212121 guifg=#87af87 cterm=reverse        gui=reverse
+hi DiffChange      ctermbg=235  ctermfg=103  guibg=#212121 guifg=#8787af cterm=reverse        gui=reverse
+hi DiffDelete      ctermbg=235  ctermfg=131  guibg=#212121 guifg=#af5f5f cterm=reverse        gui=reverse
+hi DiffText        ctermbg=235  ctermfg=208  guibg=#212121 guifg=#ff8700 cterm=reverse        gui=reverse
 
-hi IncSearch       ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#262626 cterm=NONE           gui=NONE
-hi Search          ctermbg=229  ctermfg=235  guibg=#ffffaf guifg=#262626 cterm=NONE           gui=NONE
+hi IncSearch       ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#212121 cterm=NONE           gui=NONE
+hi Search          ctermbg=229  ctermfg=235  guibg=#ffffaf guifg=#212121 cterm=NONE           gui=NONE
 
 hi Directory       ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#5fafaf cterm=NONE           gui=NONE
 
