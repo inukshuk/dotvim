@@ -47,7 +47,7 @@
 	url = https://github.com/tpope/vim-fugitive.git
   ignore = dirty
 [submodule "vim-pug"]
-	path = pack/bundle/start/vim-pug
+	path = pack/bundle/opt/vim-pug
 	url = git://github.com/digitaltoad/vim-pug.git
   ignore = dirty
 [submodule "bundle/vim-gnupg"]
