@@ -9,11 +9,11 @@
 
 ## Upgrading a plugin bundle
     cd ~/.vim/pack/bundle/start/fugitive
-    git pull origin master
+    git pull
 
 ## Upgrading all bundled plugins
     cd ~/.vim
-    git submodule foreach git pull origin master
+    git submodule foreach git pull
 
 ## Adding a plugin bundle
     cd ~/.vim
