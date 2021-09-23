@@ -66,7 +66,7 @@
 	url = https://github.com/ericpruitt/tmux.vim
   ignore = dirty
 [submodule "bundle/vim-hbs"]
-	path = pack/bundle/start/vim-hbs
+	path = pack/bundle/opt/vim-hbs
 	url = https://github.com/mustache/vim-mustache-handlebars
   ignore = dirty
 [submodule "bundle/splitjoin"]
@@ -102,3 +102,18 @@
 [submodule "pack/bundle/opt/vim-coffee-script"]
 	path = pack/bundle/opt/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "pack/bundle/start/zenbones"]
+	path = pack/bundle/start/zenbones
+	url = git@github.com:mcchrish/zenbones.nvim
+[submodule "pack/bundle/start/vim-yin-yang"]
+	path = pack/bundle/start/vim-yin-yang
+	url = git@github.com:pgdouyon/vim-yin-yang
+[submodule "pack/bundle/start/nord-vim"]
+	path = pack/bundle/start/nord-vim
+	url = git@github.com:arcticicestudio/nord-vim
+[submodule "pack/bundle/start/vim-colors-pencil"]
+	path = pack/bundle/start/vim-colors-pencil
+	url = git@github.com:preservim/vim-colors-pencil
+[submodule "pack/bundle/start/yui"]
+	path = pack/bundle/start/yui
+	url = git@github.com:cideM/yui
