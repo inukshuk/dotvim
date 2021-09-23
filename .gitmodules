@@ -22,10 +22,6 @@
 	path = pack/bundle/start/lightline
 	url = https://github.com/itchyny/lightline.vim.git
   ignore = dirty
-[submodule "bundle/colorschemes"]
-	path = pack/bundle/start/colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
-  ignore = dirty
 [submodule "bundle/gitgutter"]
 	path = pack/bundle/start/gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
