@@ -1,170 +1,215 @@
-" 'ghost-dark.vim' -- Vim color scheme.
-" Description:  A variation of 'Apprentice' by
-"               Romain Lafourcade (romainlafourcade@gmail.com)
-
-" MADE-UP NAME    HEX        RGB                   XTERM  ANSI
-" ========================================================================
-" almost black    #1c1c1c    rgb(28, 28, 28)       234    0
-" darker grey     #212121    rgb(33, 33, 33)       235    background color
-" dark grey       #303030    rgb(48, 48, 48)       236    8
-" grey            #444444    rgb(68, 68, 68)       238    8
-" medium grey     #585858    rgb(88, 88, 88)       240    8
-" light grey      #6c6c6c    rgb(108, 108, 108)    242    7
-" lighter grey    #bcbcbc    rgb(188, 188, 188)    250    foreground color
-" white           #ffffff    rgb(255, 255, 255)    231    15
-" purple          #5f5f87    rgb(95, 95, 135)      60     5
-" light purple    #8787af    rgb(135, 135, 175)    103    13
-" green           #5f875f    rgb(95, 135, 95)      65     2
-" light green     #87af87    rgb(135, 175, 135)    108    10
-" aqua            #5f8787    rgb(95, 135, 135)     66     6
-" light aqua      #5fafaf    rgb(95, 175, 175)     73     14
-" blue            #5f87af    rgb(95, 135, 175)     67     4
-" light blue      #8fafd7    rgb(143, 175, 215)    110    12
-" red             #af5f5f    rgb(175, 95, 95)      131    1
-" orange          #ff8700    rgb(255, 135, 0)      208    9
-" ocre            #87875f    rgb(135, 135, 95)     101    3
-" yellow          #ffffaf    rgb(255, 255, 175)    229    11
-
-hi clear
-
-if exists("syntax_on")
-  syntax reset
+" This file is auto-generated from lua/zenbones/template/vim.lua
+if exists('g:colors_name')
+    highlight clear
+    syntax reset
+    set t_Co=256
 endif
-
-let colors_name = "ghost-dark"
-
-hi Normal          ctermbg=235  ctermfg=250  guibg=#212121 guifg=#bcbcbc cterm=NONE           gui=NONE
-hi LineNr          ctermbg=235  ctermfg=242  guibg=#212121 guifg=#6c6c6c cterm=NONE           gui=NONE
-hi FoldColumn      ctermbg=235  ctermfg=242  guibg=#212121 guifg=#6c6c6c cterm=NONE           gui=NONE
-hi Folded          ctermbg=235  ctermfg=242  guibg=#212121 guifg=#6c6c6c cterm=NONE           gui=NONE
-hi MatchParen      ctermbg=235  ctermfg=229  guibg=#212121 guifg=#ffffaf cterm=NONE           gui=NONE
-hi signColumn      ctermbg=235  ctermfg=242  guibg=#212121 guifg=#6c6c6c cterm=NONE           gui=NONE
 
 set background=dark
+let g:colors_name = 'ghost-dark'
 
-hi Comment         ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
-hi Conceal         ctermbg=NONE ctermfg=250  guibg=NONE    guifg=#bcbcbc cterm=NONE           gui=NONE
-hi Constant        ctermbg=NONE ctermfg=208  guibg=NONE    guifg=#ff8700 cterm=NONE           gui=NONE
-hi Error           ctermbg=NONE ctermfg=131  guibg=NONE    guifg=#af5f5f cterm=reverse        gui=reverse
-hi Identifier      ctermbg=NONE ctermfg=67   guibg=NONE    guifg=#5f87af cterm=NONE           gui=NONE
-hi Ignore          ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=NONE           gui=NONE
-hi PreProc         ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=NONE           gui=NONE
-hi Special         ctermbg=NONE ctermfg=65   guibg=NONE    guifg=#5f875f cterm=NONE           gui=NONE
-hi Statement       ctermbg=NONE ctermfg=110  guibg=NONE    guifg=#8fafd7 cterm=NONE           gui=NONE
-hi String          ctermbg=NONE ctermfg=108  guibg=NONE    guifg=#87af87 cterm=NONE           gui=NONE
-hi Todo            ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=reverse        gui=reverse
-hi Type            ctermbg=NONE ctermfg=103  guibg=NONE    guifg=#8787af cterm=NONE           gui=NONE
-hi Underlined      ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=underline      gui=underline
+let g:terminal_color_0 = '#212121'
+let g:terminal_color_1 = '#DE6E7C'
+let g:terminal_color_2 = '#819B69'
+let g:terminal_color_3 = '#B77E64'
+let g:terminal_color_4 = '#6099C0'
+let g:terminal_color_5 = '#B279A7'
+let g:terminal_color_6 = '#66A5AD'
+let g:terminal_color_7 = '#B4BDC3'
+let g:terminal_color_8 = '#3E3834'
+let g:terminal_color_9 = '#E8838F'
+let g:terminal_color_10 = '#8BAE68'
+let g:terminal_color_11 = '#D68C67'
+let g:terminal_color_12 = '#61ABDA'
+let g:terminal_color_13 = '#CF86C1'
+let g:terminal_color_14 = '#65B8C1'
+let g:terminal_color_15 = '#888F94'
 
-hi NonText         ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
-
-hi Pmenu           ctermbg=238  ctermfg=250  guibg=#444444 guifg=#bcbcbc cterm=NONE           gui=NONE
-hi PmenuSbar       ctermbg=240  ctermfg=NONE guibg=#585858 guifg=NONE    cterm=NONE           gui=NONE
-hi PmenuSel        ctermbg=66   ctermfg=235  guibg=#5f8787 guifg=#212121 cterm=NONE           gui=NONE
-hi PmenuThumb      ctermbg=66   ctermfg=66   guibg=#5f8787 guifg=#5f8787 cterm=NONE           gui=NONE
-
-hi ErrorMsg        ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#212121 cterm=NONE           gui=NONE
-hi ModeMsg         ctermbg=NONE ctermfg=242  guibg=NONE    guifg=#6c6c6c cterm=NONE           gui=NONE
-hi MoreMsg         ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=NONE           gui=NONE
-hi Question        ctermbg=NONE ctermfg=108  guibg=NONE    guifg=#87af87 cterm=NONE           gui=NONE
-hi WarningMsg      ctermbg=NONE ctermfg=131  guibg=NONE    guifg=#af5f5f cterm=NONE           gui=NONE
-
-hi TabLine         ctermbg=238  ctermfg=101  guibg=#444444 guifg=#87875f cterm=NONE           gui=NONE
-hi TabLineFill     ctermbg=238  ctermfg=238  guibg=#444444 guifg=#444444 cterm=NONE           gui=NONE
-hi TabLineSel      ctermbg=101  ctermfg=235  guibg=#87875f guifg=#212121 cterm=NONE           gui=NONE
-
-hi Cursor          ctermbg=242  ctermfg=NONE guibg=#6c6c6c guifg=NONE    cterm=NONE           gui=NONE
-hi CursorColumn    ctermbg=236  ctermfg=NONE guibg=#303030 guifg=NONE    cterm=NONE           gui=NONE
-hi CursorLineNr    ctermbg=236  ctermfg=73   guibg=#303030 guifg=#5fafaf cterm=NONE           gui=NONE
-hi CursorLine      ctermbg=236  ctermfg=NONE guibg=#303030 guifg=NONE    cterm=NONE           gui=NONE
-
-hi helpLeadBlank   ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=NONE           gui=NONE
-hi helpNormal      ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=NONE           gui=NONE
-
-hi StatusLine      ctermbg=236  ctermfg=250  guibg=#303030 guifg=#bcbcbc cterm=NONE           gui=NONE
-hi StatusLineNC    ctermbg=236  ctermfg=242  guibg=#303030 guifg=#6c6c6c cterm=NONE           gui=NONE
-
-hi Visual          ctermbg=235  ctermfg=110  guibg=#212121 guifg=#8fafd7 cterm=reverse        gui=reverse
-hi VisualNOS       ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline      gui=underline
-
-hi VertSplit       ctermbg=235  ctermfg=236  guibg=#212121 guifg=#303030 cterm=NONE           gui=NONE
-hi WildMenu        ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#212121 cterm=NONE           gui=NONE
-
-hi Function        ctermbg=NONE ctermfg=229  guibg=NONE    guifg=#ffffaf cterm=NONE           gui=NONE
-hi SpecialKey      ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
-hi Title           ctermbg=NONE ctermfg=231  guibg=NONE    guifg=#ffffff cterm=NONE           gui=NONE
-
-hi DiffAdd         ctermbg=235  ctermfg=108  guibg=#212121 guifg=#87af87 cterm=reverse        gui=reverse
-hi DiffChange      ctermbg=235  ctermfg=103  guibg=#212121 guifg=#8787af cterm=reverse        gui=reverse
-hi DiffDelete      ctermbg=235  ctermfg=131  guibg=#212121 guifg=#af5f5f cterm=reverse        gui=reverse
-hi DiffText        ctermbg=235  ctermfg=208  guibg=#212121 guifg=#ff8700 cterm=reverse        gui=reverse
-
-hi IncSearch       ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#212121 cterm=NONE           gui=NONE
-hi Search          ctermbg=229  ctermfg=235  guibg=#ffffaf guifg=#212121 cterm=NONE           gui=NONE
-
-hi Directory       ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#5fafaf cterm=NONE           gui=NONE
-
-hi debugPC         ctermbg=67                guibg=#5f87af
-hi debugBreakpoint ctermbg=131               guibg=#af5f5f
-
-if has("gui_running")
-  hi SpellBad      ctermbg=NONE ctermfg=131  guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#af5f5f
-  hi SpellCap      ctermbg=NONE ctermfg=73   guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#5fafaf
-  hi SpellLocal    ctermbg=NONE ctermfg=65   guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#5f875f
-  hi SpellRare     ctermbg=NONE ctermfg=208  guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#ff8700
-else
-  hi SpellBad      ctermbg=NONE ctermfg=131  guibg=NONE    guifg=#af5f5f cterm=undercurl      gui=undercurl guisp=NONE
-  hi SpellCap      ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#5fafaf cterm=undercurl      gui=undercurl guisp=NONE
-  hi SpellLocal    ctermbg=NONE ctermfg=65   guibg=NONE    guifg=#5f875f cterm=undercurl      gui=undercurl guisp=NONE
-  hi SpellRare     ctermbg=NONE ctermfg=208  guibg=NONE    guifg=#ff8700 cterm=undercurl      gui=undercurl guisp=NONE
+if has('terminal')
+    let g:terminal_ansi_colors = [
+                \ g:terminal_color_0,
+                \ g:terminal_color_1,
+                \ g:terminal_color_2,
+                \ g:terminal_color_3,
+                \ g:terminal_color_4,
+                \ g:terminal_color_5,
+                \ g:terminal_color_6,
+                \ g:terminal_color_7,
+                \ g:terminal_color_8,
+                \ g:terminal_color_9,
+                \ g:terminal_color_10,
+                \ g:terminal_color_11,
+                \ g:terminal_color_12,
+                \ g:terminal_color_13,
+                \ g:terminal_color_14,
+                \ g:terminal_color_15
+                \ ]
 endif
 
-hi ColorColumn     ctermbg=234  ctermfg=NONE guibg=#1c1c1c guifg=NONE    cterm=NONE           gui=NONE
-
-hi link Boolean                  Constant
-hi link Character                Constant
-hi link Conditional              Statement
-hi link Debug                    Special
-hi link Define                   PreProc
-hi link Delimiter                Special
-hi link Exception                Statement
-hi link Float                    Number
-hi link HelpCommand              Statement
-hi link HelpExample              Statement
-hi link Include                  PreProc
-hi link Keyword                  Statement
-hi link Label                    Statement
-hi link Macro                    PreProc
-hi link Number                   Constant
-hi link Operator                 Statement
-hi link PreCondit                PreProc
-hi link Repeat                   Statement
-hi link SpecialChar              Special
-hi link SpecialComment           Special
-hi link StorageClass             Type
-hi link Structure                Type
-hi link Tag                      Special
-hi link Typedef                  Type
-
-hi link htmlEndTag               htmlTagName
-hi link htmlLink                 Function
-hi link htmlSpecialTagName       htmlTagName
-hi link htmlTag                  htmlTagName
-hi link htmlBold                 Normal
-hi link htmlItalic               Normal
-hi link xmlTag                   Statement
-hi link xmlTagName               Statement
-hi link xmlEndTag                Statement
-
-hi link markdownItalic           Preproc
-hi link asciidocQuotedEmphasized Preproc
-
-hi link diffBDiffer              WarningMsg
-hi link diffCommon               WarningMsg
-hi link diffDiffer               WarningMsg
-hi link diffIdentical            WarningMsg
-hi link diffIsA                  WarningMsg
-hi link diffNoEOL                WarningMsg
-hi link diffOnly                 WarningMsg
-hi link diffRemoved              WarningMsg
-hi link diffAdded                String
+highlight Bold guifg=NONE guibg=NONE guisp=NONE gui=bold
+highlight BufferVisible guifg=#CAD0D4 guibg=NONE guisp=NONE gui=NONE
+highlight BufferVisibleIndex guifg=#CAD0D4 guibg=NONE guisp=NONE gui=NONE
+highlight BufferVisibleSign guifg=#CAD0D4 guibg=NONE guisp=NONE gui=NONE
+highlight CocMarkdownLink guifg=#66A5AD guibg=NONE guisp=NONE gui=underline
+highlight ColorColumn guifg=NONE guibg=#675047 guisp=NONE gui=NONE
+highlight Comment guifg=#6C6765 guibg=NONE guisp=NONE gui=italic
+highlight Conceal guifg=#8D9499 guibg=NONE guisp=NONE gui=bold,italic
+highlight Constant guifg=#868C91 guibg=NONE guisp=NONE gui=italic
+highlight Cursor guifg=#171514 guibg=#C4CACF guisp=NONE gui=NONE
+highlight CursorLine guifg=NONE guibg=#24211F guisp=NONE gui=NONE
+highlight CursorLineNr guifg=#B4BDC3 guibg=NONE guisp=NONE gui=bold
+highlight Delimiter guifg=#8E8480 guibg=NONE guisp=NONE gui=NONE
+highlight DiffAdd guifg=NONE guibg=#333C2C guisp=NONE gui=NONE
+highlight DiffChange guifg=NONE guibg=#2D404E guisp=NONE gui=NONE
+highlight DiffDelete guifg=NONE guibg=#5B2E33 guisp=NONE gui=NONE
+highlight DiffText guifg=#B4BDC3 guibg=#455C6F guisp=NONE gui=NONE
+highlight Directory guifg=NONE guibg=NONE guisp=NONE gui=bold
+highlight Error guifg=#DE6E7C guibg=NONE guisp=NONE gui=NONE
+highlight FloatBorder guifg=#817873 guibg=NONE guisp=NONE gui=NONE
+highlight FoldColumn guifg=#5A5350 guibg=NONE guisp=NONE gui=bold
+highlight Folded guifg=#BBAEA8 guibg=#3D3836 guisp=NONE gui=NONE
+highlight Function guifg=#B4BDC3 guibg=NONE guisp=NONE gui=NONE
+highlight GitSignsAdd guifg=#819B69 guibg=NONE guisp=NONE gui=NONE
+highlight GitSignsChange guifg=#6099C0 guibg=NONE guisp=NONE gui=NONE
+highlight GitSignsDelete guifg=#DE6E7C guibg=NONE guisp=NONE gui=NONE
+highlight HopNextKey2 guifg=#6099C0 guibg=NONE guisp=NONE gui=NONE
+highlight Identifier guifg=#979FA4 guibg=NONE guisp=NONE gui=NONE
+highlight IncSearch guifg=#212121 guibg=#B279A7 guisp=NONE gui=bold
+highlight IndentBlanklineChar guifg=#373432 guibg=NONE guisp=NONE gui=NONE
+highlight Italic guifg=NONE guibg=NONE guisp=NONE gui=italic
+highlight LightspeedGreyWash guifg=#6C6765 guibg=NONE guisp=NONE gui=NONE
+highlight LightspeedLabel guifg=#B279A7 guibg=NONE guisp=NONE gui=bold,underline
+highlight LightspeedLabelDistant guifg=#66A5AD guibg=NONE guisp=NONE gui=bold,underline
+highlight LightspeedLabelDistantOverlapped guifg=#66A5AD guibg=NONE guisp=NONE gui=underline
+highlight LightspeedLabelOverlapped guifg=#B279A7 guibg=NONE guisp=NONE gui=underline
+highlight LightspeedOneCharMatch guifg=#212121 guibg=#B279A7 guisp=NONE gui=bold
+highlight LightspeedPendingChangeOpArea guifg=#B279A7 guibg=NONE guisp=NONE gui=NONE
+highlight LightspeedShortcut guifg=#212121 guibg=#B279A7 guisp=NONE gui=bold,underline
+highlight LineNr guifg=#5A5350 guibg=NONE guisp=NONE gui=NONE
+highlight LspDiagnosticsDefaultHint guifg=#B279A7 guibg=NONE guisp=NONE gui=NONE
+highlight LspDiagnosticsDefaultInformation guifg=#6099C0 guibg=NONE guisp=NONE gui=NONE
+highlight LspDiagnosticsUnderlineError guifg=#DE6E7C guibg=NONE guisp=NONE gui=undercurl
+highlight LspDiagnosticsUnderlineHint guifg=#B279A7 guibg=NONE guisp=NONE gui=undercurl
+highlight LspDiagnosticsUnderlineInformation guifg=#6099C0 guibg=NONE guisp=NONE gui=undercurl
+highlight LspDiagnosticsUnderlineWarning guifg=#B77E64 guibg=NONE guisp=NONE gui=undercurl
+highlight LspDiagnosticsVirtualTextError guifg=#DE6E7C guibg=#3A2A2C guisp=NONE gui=NONE
+highlight LspDiagnosticsVirtualTextWarning guifg=#B77E64 guibg=#362C28 guisp=NONE gui=NONE
+highlight MoreMsg guifg=#819B69 guibg=NONE guisp=NONE gui=bold
+highlight NeogitHunkHeaderHighlight guifg=#B4BDC3 guibg=#24211F guisp=NONE gui=bold
+highlight NonText guifg=#524C4A guibg=NONE guisp=NONE gui=NONE
+highlight Normal guifg=#B4BDC3 guibg=#212121 guisp=NONE gui=NONE
+highlight NormalFloat guifg=NONE guibg=#2B2725 guisp=NONE gui=NONE
+highlight Number guifg=NONE guibg=NONE guisp=NONE gui=italic
+highlight Pmenu guifg=NONE guibg=#34302E guisp=NONE gui=NONE
+highlight PmenuSbar guifg=NONE guibg=#716965 guisp=NONE gui=NONE
+highlight PmenuSel guifg=NONE guibg=#4E4845 guisp=NONE gui=NONE
+highlight PmenuThumb guifg=NONE guibg=#8B827D guisp=NONE gui=NONE
+highlight Search guifg=#B4BDC3 guibg=#73516C guisp=NONE gui=NONE
+highlight SneakLabelMask guifg=#B279A7 guibg=#B279A7 guisp=NONE gui=NONE
+highlight Special guifg=#9CA4AA guibg=NONE guisp=NONE gui=bold
+highlight SpecialComment guifg=#6C6765 guibg=NONE guisp=NONE gui=bold
+highlight SpecialKey guifg=#524C4A guibg=NONE guisp=NONE gui=italic
+highlight SpellBad guifg=#CB7A83 guibg=NONE guisp=NONE gui=undercurl
+highlight SpellCap guifg=#CB7A83 guibg=NONE guisp=NONE gui=undercurl
+highlight SpellRare guifg=#CB7A83 guibg=NONE guisp=NONE gui=undercurl
+highlight Statement guifg=#B4BDC3 guibg=NONE guisp=NONE gui=bold
+highlight StatusLine guifg=#B4BDC3 guibg=#3D3836 guisp=NONE gui=NONE
+highlight StatusLineNC guifg=#CAD0D4 guibg=#312D2B guisp=NONE gui=NONE
+highlight TabLine guifg=#B4BDC3 guibg=#3D3836 guisp=NONE gui=italic
+highlight TabLineSel guifg=NONE guibg=NONE guisp=NONE gui=bold
+highlight TelescopeMatching guifg=#B279A7 guibg=NONE guisp=NONE gui=bold
+highlight TelescopeSelectionCaret guifg=#DE6E7C guibg=#24211F guisp=NONE gui=NONE
+highlight Title guifg=NONE guibg=NONE guisp=NONE gui=bold
+highlight Todo guifg=NONE guibg=NONE guisp=NONE gui=bold,underline
+highlight Type guifg=#9E948F guibg=NONE guisp=NONE gui=NONE
+highlight Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline
+highlight Visual guifg=NONE guibg=#37393B guisp=NONE gui=NONE
+highlight WarningMsg guifg=#B77E64 guibg=NONE guisp=NONE gui=NONE
+highlight WildMenu guifg=#212121 guibg=#B279A7 guisp=NONE gui=NONE
+highlight diffAdded guifg=#819B69 guibg=NONE guisp=NONE gui=NONE
+highlight diffChanged guifg=#6099C0 guibg=NONE guisp=NONE gui=NONE
+highlight diffFile guifg=#B77E64 guibg=NONE guisp=NONE gui=bold
+highlight diffIndexLine guifg=#B77E64 guibg=NONE guisp=NONE gui=NONE
+highlight diffLine guifg=#B279A7 guibg=NONE guisp=NONE gui=bold
+highlight diffNewFile guifg=#819B69 guibg=NONE guisp=NONE gui=italic
+highlight diffOldFile guifg=#DE6E7C guibg=NONE guisp=NONE gui=italic
+highlight diffRemoved guifg=#DE6E7C guibg=NONE guisp=NONE gui=NONE
+highlight lCursor guifg=#171514 guibg=#797F84 guisp=NONE gui=NONE
+highlight markdownH1 guifg=#B4BDC3 guibg=NONE guisp=NONE gui=bold,underline
+highlight! link Boolean Number
+highlight! link BufferCurrent TabLineSel
+highlight! link CocCodeLens LineNr
+highlight! link CocErrorHighlight LspDiagnosticsUnderlineError
+highlight! link CocErrorSign LspDiagnosticsDefaultError
+highlight! link CocErrorVirtualText LspDiagnosticsVirtualTextError
+highlight! link CocHintHighlight LspDiagnosticsUnderlineHint
+highlight! link CocHintSign LspDiagnosticsDefaultHint
+highlight! link CocInfoHighlight LspDiagnosticsUnderlineInformation
+highlight! link CocInfoSign LspDiagnosticsDefaultInformation
+highlight! link CocSelectedText SpellBad
+highlight! link CocWarningHighlight LspDiagnosticsUnderlineWarning
+highlight! link CocWarningSign LspDiagnosticsDefaultWarning
+highlight! link CocWarningVitualText LspDiagnosticsVirtualTextWarning
+highlight! link CursorColumn CursorLine
+highlight! link EndOfBuffer NonText
+highlight! link ErrorMsg Error
+highlight! link GitGutterAdd GitSignsAdd
+highlight! link GitGutterChange GitSignsChange
+highlight! link GitGutterDelete GitSignsDelete
+highlight! link HopNextKey LightspeedLabel
+highlight! link HopNextKey1 LightspeedLabelDistant
+highlight! link HopUnmatched LightspeedGreyWash
+highlight! link LightspeedMaskedChar Conceal
+highlight! link LightspeedPendingOpArea SneakLabel
+highlight! link LightspeedUnlabeledMatch Bold
+highlight! link LspCodeLens LineNr
+highlight! link LspDiagnosticsDefaultError Error
+highlight! link LspDiagnosticsDefaultWarning WarningMsg
+highlight! link LspReferenceRead ColorColumn
+highlight! link LspReferenceText ColorColumn
+highlight! link LspReferenceWrite ColorColumn
+highlight! link MatchParen Search
+highlight! link NeogitDiffAddHighlight DiffAdd
+highlight! link NeogitDiffContextHighlight CursorLine
+highlight! link NeogitDiffDeleteHighlight DiffDelete
+highlight! link NeogitHunkHeader LineNr
+highlight! link NeogitNotificationError LspDiagnosticsDefaultError
+highlight! link NeogitNotificationInfo LspDiagnosticsDefaultInformation
+highlight! link NeogitNotificationWarning LspDiagnosticsDefaultWarning
+highlight! link PreProc Statement
+highlight! link Question MoreMsg
+highlight! link SignColumn LineNr
+highlight! link Sneak Search
+highlight! link SneakLabel WildMenu
+highlight! link SpellLocal SpellCap
+highlight! link TSDanger Error
+highlight! link TSNote LspDiagnosticsDefaultInformation
+highlight! link TSTag Special
+highlight! link TSVariable Identifier
+highlight! link TSWarning WarningMsg
+highlight! link TabLineFill StatusLineNC
+highlight! link TelescopeBorder FloatBorder
+highlight! link TelescopeSelection CursorLine
+highlight! link TermCursor Cursor
+highlight! link TermCursorNC lCursor
+highlight! link TroubleNormal Function
+highlight! link TroubleSource Constant
+highlight! link TroubleText Function
+highlight! link VertSplit LineNr
+highlight! link WhichKey Statement
+highlight! link WhichKeyGroup Special
+highlight! link WhichKeySeparator LineNr
+highlight! link WhichKeyValue Constant
+highlight! link Whitespace NonText
+highlight! link gitcommitOverflow WarningMsg
+highlight! link helpHyperTextEntry Special
+highlight! link helpHyperTextJump Constant
+highlight! link helpOption Constant
+highlight! link helpSpecial Type
+highlight! link markdownCode Identifier
+highlight! link markdownH2 Statement
+highlight! link markdownH3 Statement
+highlight! link markdownH4 Special
+highlight! link markdownH5 Special
+highlight! link markdownH6 Special
+highlight! link markdownLinkTextDelimiter Delimiter

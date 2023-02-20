@@ -34,7 +34,7 @@ if exists('+termguicolors')
 endif
 
 set background=dark
-colorscheme zenflesh
+colorscheme ghost-dark
 
 " Thin vertical splits
 set fillchars=vert:│
