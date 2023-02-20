@@ -42,10 +42,6 @@
 	path = pack/bundle/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
   ignore = dirty
-[submodule "vim-pug"]
-	path = pack/bundle/opt/vim-pug
-	url = git://github.com/digitaltoad/vim-pug.git
-  ignore = dirty
 [submodule "bundle/vim-gnupg"]
 	path = pack/bundle/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
@@ -64,10 +60,6 @@
 [submodule "bundle/tmux"]
 	path = pack/bundle/start/tmux
 	url = https://github.com/ericpruitt/tmux.vim
-  ignore = dirty
-[submodule "bundle/vim-hbs"]
-	path = pack/bundle/opt/vim-hbs
-	url = https://github.com/mustache/vim-mustache-handlebars
   ignore = dirty
 [submodule "bundle/splitjoin"]
 	path = pack/bundle/start/splitjoin
@@ -108,9 +100,6 @@
 [submodule "pack/bundle/start/vim-yin-yang"]
 	path = pack/bundle/start/vim-yin-yang
 	url = git@github.com:pgdouyon/vim-yin-yang
-[submodule "pack/bundle/start/nord-vim"]
-	path = pack/bundle/start/nord-vim
-	url = git@github.com:arcticicestudio/nord-vim
 [submodule "pack/bundle/start/vim-colors-pencil"]
 	path = pack/bundle/start/vim-colors-pencil
 	url = git@github.com:preservim/vim-colors-pencil
