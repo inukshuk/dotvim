@@ -106,3 +106,6 @@
 [submodule "pack/bundle/start/yui"]
 	path = pack/bundle/start/yui
 	url = git@github.com:cideM/yui
+[submodule "pack/bundle/start/vim-racket"]
+	path = pack/bundle/start/vim-racket
+	url = https://github.com/wlangstroth/vim-racket.git
