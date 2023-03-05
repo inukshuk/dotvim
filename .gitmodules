@@ -109,3 +109,6 @@
 [submodule "pack/bundle/start/vim-racket"]
 	path = pack/bundle/start/vim-racket
 	url = https://github.com/wlangstroth/vim-racket.git
+[submodule "pack/bundle/start/rust.vim"]
+	path = pack/bundle/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
